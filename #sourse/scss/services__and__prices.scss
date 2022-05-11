@@ -1,0 +1,267 @@
+.wrapper__services__and__prices {
+    max-width: 1240px;
+    margin: 0 auto;
+
+    h3 {
+        font-size: 2.375rem;
+        line-height: 45px;
+        text-align: center;
+
+        color: #FFFFFF;
+
+        padding: 55px 0 30px 0;
+
+        opacity: 0;
+        transform: scale(0.7);
+        transition: .6s .2s ease;
+
+        &._active {
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+
+    .block__services__and__prices {
+        display: flex;
+        gap: 36px;
+
+        .services__and__prices {
+            background: #232326;
+            max-width: 283px;
+
+            position: relative;
+
+            padding-bottom: 20px;
+
+            display: flex;
+            flex-direction: column;
+
+            &:nth-child(1) {
+                opacity: 0;
+                transform: translate(0 , 20px);
+                transition: .6s .2s ease;
+
+                &._active {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+            &:nth-child(2) {
+                opacity: 0;
+                transform: translate(0 , -20px);
+                transition: .6s .4s ease;
+
+                &._active {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+            &:nth-child(3) {
+                opacity: 0;
+                transform: translate(0 , 20px);
+                transition: .6s .6s ease;
+
+                &._active {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+
+            &:nth-child(4) {
+                opacity: 0;
+                transform: translate(0 , -20px);
+                transition: .6s .8s ease;
+
+                &._active {
+                    opacity: 1;
+                    transform: scale(1);
+                }
+            }
+            
+            
+            .services {
+                font-size: 1.65rem;
+                line-height: 36px;
+                text-align: center;
+
+                color: #FFFFFF;
+
+                padding: 25px 25px 15px 25px;
+            }
+
+            .price {
+                font-family: 'Abril Fatface';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 2rem;
+                line-height: 46px;
+                text-align: center;
+                
+                color: #DC0000;
+                
+            }
+
+            hr {
+                width: 100%;
+
+                border: 1px solid #606060;
+
+                margin: 25px 0 18px 0;
+            
+            }
+
+            .about {
+                font-size: 1.3rem;
+                line-height: 27px;
+                text-align: center;
+
+                color: #FFFFFF;
+
+                max-width: 300px;
+
+                padding: 0 25px 80px 25px;
+            }
+
+            .button__order {
+                button.animated-button {
+                cursor: pointer;
+                
+                width: 180px;
+
+                position: relative;
+
+                display: block;
+                
+                margin: 30px auto 0;
+                padding: 15px 15px;
+                
+                color: #fff;
+                font-size: 1.2rem;
+               
+                text-align: center;
+                text-decoration: none;
+                
+                background: #232326;
+
+                overflow: hidden;
+
+                letter-spacing: .08em;
+
+                border-radius: 0;
+
+                text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    
+                transition: all 1s ease;
+                z-index: 1;        
+                }
+                button.animated-button:after {
+                    content: "";
+                    position: absolute;
+                    height: 0%;
+                    left: 50%;
+                    top: 50%;
+
+                    width: 150%;
+
+                    z-index: -1;
+
+                    transition: all 0.75s ease 0s;
+                }
+                button.animated-button:hover  {
+                    color: #FFF;
+                    text-shadow: none;
+                }
+                button.animated-button:hover:after  {
+                    height: 450%;
+                }
+                button.animated-button {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 50%;
+                    transform: translateX(-50%);
+
+                    display: block;
+
+                    margin: 30px auto 0;
+                    padding: 15px 35px;
+
+                    color: #fff;
+
+                    font-size: 1.2rem;
+
+                    border-radius: 0;
+
+                    text-align: center;
+                    text-decoration: none;
+                   
+
+                    overflow: hidden;
+
+                    letter-spacing: .08em;
+
+                    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+
+                    transition: all 1s ease;
+                }
+
+                /* Victoria Buttons */
+
+                button.animated-button.victoria-one {
+                    border: 2px solid #DC0000;
+                }
+                button.animated-button.victoria-one:after {
+                    background: #DC0000;
+
+                    transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+
+                }
+
+                button.animated-button.victoria-two {
+                    border: 2px solid #DC0000;
+                }
+                button.animated-button.victoria-two:after {
+                    background: #DC0000;
+                    -moz-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+                    -ms-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+                    -webkit-transform: translateX(-50%) translateY(-50%) rotate(25deg);
+                    transform: translateX(-50%) translateY(-50%) rotate(25deg);
+                }
+            }
+        }
+    }
+
+    @media(max-width:1250px) {
+        .block__services__and__prices {
+            flex-wrap: wrap;
+            margin: 0 15px;
+            justify-content: center;
+        }
+    }
+
+    @media(max-width:913px) {
+        .block__services__and__prices {
+            .services__and__prices:nth-child(even) {
+                transform: translate(20px ,0);
+                transition: .6s .2s ease;
+
+                &._active {
+                    transform: translate(0px ,0);
+                }
+            }
+
+            .services__and__prices:nth-child(odd) {
+                transform: translate(-20px ,0);
+                transition: .6s .2s ease;
+
+                &._active {
+                    transform: translate(0px ,0);
+                }
+            }
+        }
+    }
+
+}
+
+
