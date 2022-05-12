@@ -291,6 +291,10 @@ header {
 
         .header__buttons {
             gap: 30px ;
+
+            &.open {
+                gap: 0;
+            }
         }
 
         .button__burger {
@@ -476,6 +480,10 @@ header {
                 z-index: 100;
 
                 cursor: pointer;
+
+                &.open {
+                    display: none;
+                }
     
                 &:hover {
                     -webkit-box-shadow: inset 0px -9px 30px -14px rgba(0,0,0,0.79); 

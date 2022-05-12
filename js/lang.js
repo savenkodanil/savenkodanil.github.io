@@ -64,7 +64,7 @@ const arrLang = {
       "about-prices-4": "Modern layout for all devices. Term from two days.",
       "reviews-about-my": "REVIEWS",
       "customers-say-about-me": "What customers say about me",
-      "customers-say": "“Danilo is responsible for any job, he is a very promising guy, as I saw, he loves to work and develop their skills, he did his job well and relatively quickly. Created me a landing for the sale of building materials and windows, managed in 4 days, it turned out very cool. He also worked on creating banners, business cards, logos, billboards, booklets, etc. for our company. I managed all this in a week.“",
+      "customers-say": "“Danilo is responsible for any job, he is a very promising guy, as I saw, he loves to work and develop his skills, he did his job well and relatively quickly. He created a site for me to sell building materials and windows. He also worked on the design of banners, business cards, logos, billboards, booklets for my company. I managed all this in a week. ",
       "customers": "Sergey Kvach",
       "go-to-site": "Go to the site",
       "back-to-top": "TO TOP"
@@ -123,7 +123,7 @@ const arrLang = {
       "about-prices-4": "Сучасний макет під усі пристрої. Термін виконання від двох днів.",
       "reviews-about-my": "ВІДГУКИ",
       "customers-say-about-me": "Що клієнти говорять про мене",
-      "customers-say": "“Данило відповідально береться за будь-яку роботу, дуже перспективний хлопець, як я побачив він любить працювати і рости у своїх вміннях, завдання зробив якісно та відносно швидко. Він створював мені лендинг з продажу будівельних матеріалів та вікон, впорався за 4 дні, дуже круто вийшло. Також він працював над створенням банерів, візиток, логотипу, штендерів, буклетів тощо для нашої компанії. З усім цим впорався за тиждень.”",
+      "customers-say": "“Данило відповідально береться за будь-яку роботу, дуже перспективний хлопець, як я побачив він любить працювати і рости у своїх вміннях, завдання зробив якісно та відносно швидко. Він створював мені сайт з продажу будівельних матеріалів та вікон. Також він працював над створенням дизайнів банерів, візиток, логотипу, штендерів, буклетів для моєї компанії. З усім цим впорався за тиждень.”",
       "customers": "Сергій Квач",
       "go-to-site": "Перейти на сайт",
       "back-to-top":"ВГОРУ"

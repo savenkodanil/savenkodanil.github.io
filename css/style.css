@@ -355,6 +355,9 @@ header .header__bg .header__content .header__nav ul a:hover:after, header .heade
   header .header__bg .header__content .header__buttons {
     gap: 30px;
   }
+  header .header__bg .header__content .header__buttons.open {
+    gap: 0;
+  }
   header .header__bg .header__content .button__burger {
     display: block;
     background: #2B2D35;
@@ -509,6 +512,9 @@ header .header__bg .header__content .header__buttons .anim__button .button__conn
   transition: 0.5s ease;
   z-index: 100;
   cursor: pointer;
+}
+header .header__bg .header__content .header__buttons .anim__button .button__connection__with__me.open {
+  display: none;
 }
 header .header__bg .header__content .header__buttons .anim__button .button__connection__with__me:hover {
   -webkit-box-shadow: inset 0px -9px 30px -14px rgba(0, 0, 0, 0.79);
@@ -4118,7 +4124,7 @@ body {
 }
 @media (max-width: 830px) {
   .wrapper__response__about__me .response__about__me .slider {
-    right: 44%;
+    right: 40px;
   }
 }
 @media (max-width: 415px) {
