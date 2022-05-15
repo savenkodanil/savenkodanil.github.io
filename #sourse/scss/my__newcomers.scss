@@ -9,13 +9,12 @@
             .my__newcomers {
                 display: flex;
                 gap: 60px;
+                align-items: center;
                 img {
                     width: 700px;
                     height: 490px;
 
                     border-radius: 40px;
-
-                    margin-top: 110px;
 
                     opacity: 0;
                     transform: translate(-20px , 0);

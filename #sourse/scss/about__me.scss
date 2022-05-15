@@ -5,6 +5,8 @@
     background: #232326;
 
     overflow: hidden;
+
+    padding-bottom: 30px;
     .wrapper__about__me {
         padding: 160px 0 0px 0;
 
@@ -23,7 +25,7 @@
                 
                 color: #FFFFFF;
 
-                max-width: 490px;
+                max-width: 440px;
 
                 line-height: 55px;
 
@@ -305,7 +307,7 @@
     
                 position: relative;
     
-                margin: 0 21px 32px 25px;
+                margin: 0 21px 0px 25px;
 
                 opacity: 0;
                 transform: translate(10px , 0px);
@@ -705,9 +707,4 @@
     }
 }
 
-@media (max-width:1040px) {
-    .bg__about__me {
-        padding-bottom: 30px;
-    }
-}
 
