@@ -10,6 +10,6 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $('.nav__menu').click(function(event) {
-      $('body , .nav-icon2 , .header__nav , .header__logo , .header__bg , .header__content , .wrapper__text__modal__wimdow').removeClass('open');
+      $('body , .nav-icon2 , .header__nav , .header__logo , .header__bg , .header__content , .wrapper__text__modal__wimdow , .button__connection__with__me').removeClass('open');
   });
 });

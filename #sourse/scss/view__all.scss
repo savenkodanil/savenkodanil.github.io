@@ -102,6 +102,20 @@
         gap: 30px;
         align-items: center;
 
+        position: relative;
+
+        .view {
+            position: absolute;
+
+            opacity: 0;
+
+            left: 50%;
+            top: -152px;
+
+            color: pink;
+
+        }
+
         img {
             width: 570px;
             height: 855px;
@@ -394,36 +408,3 @@
     0% {opacity: 0;}
     100% {opacity: 1;}
   }
-
-.view {
-    position: absolute;
-
-    opacity: 0;
-
-    left: 50%;
-    top: 4128px;
-}
-
-@media (max-width:1025px) {
-    .view {
-        top: 6048px;
-    }
-}
-
-@media (max-width:541px) {
-    .view {
-        top: 5563px;
-    }
-}
-
-@media (max-width:415px) {
-    .view {
-        top: 5690px;
-    }
-}
-
-@media (max-width:380px) {
-    .view {
-        top: 5753px;
-    }
-}

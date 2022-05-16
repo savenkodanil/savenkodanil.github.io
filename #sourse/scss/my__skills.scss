@@ -3,6 +3,19 @@
     height: 100%;
     
     background: #232326;
+
+    position: relative;
+
+    .skills {
+        position: absolute;
+        left: 50%;
+        top: -113px;
+
+        opacity: 0;
+
+        color: aqua;
+    }
+
     .wrapper__my__skills {
         max-width: 1240px;
         margin: 42px auto 0 auto;
@@ -275,60 +288,71 @@
     }
 }
 
-.skills {
-    position: absolute;
-    left: 50%;
-    top: 4190px;
+// .skills {
+//     position: absolute;
+//     left: 50%;
+//     top: 4388px;
 
-    opacity: 0;
+//     opacity: 1;
+//     color: aqua;
 
-    &.open {
-        top: 6000px;
-    }
-}
+//     &.open {
+//         top: 6000px;
+//     }
+// }
 
-@media (max-width:1050px) {
-    .skills {
-        top: 5646px;
-    }  
-}
+// @media (max-width:1050px) {
+//     .skills {
+//         top: 5646px;
+//     }  
+// }
 
-@media (max-width:1025px) {
-    .skills {
-        top: 6149px;
+// @media (max-width:1025px) {
+//     .skills {
+//         top: 6364px;
 
-        &.open {
-            top: 8425px;
-        }
-    }  
-}
+//         &.open {
+//             top: 8425px;
+//         }
+//     }  
+// }
 
-@media (max-width:541px) {
-    .skills {
-        top: 5692px;
+// @media (max-width:541px) {
+//     .skills {
+//         top: 5928px;
 
-        &.open {
-            top: 7751px;
-        }
-    }  
-}
+//         &.open {
+//             top: 7751px;
+//         }
+//     }  
+// }
 
-@media (max-width:415px) {
-    .skills {
-        top: 5789px;
+// @media (max-width:415px) {
+//     .skills {
+//         top: 6021px;
 
-        &.open {
-            top: 7549px;
-        }
-    }  
-}
+//         &.open {
+//             top: 7549px;
+//         }
+//     }  
+// }
 
-@media (max-width:376px) {
-    .skills {
-        top: 5857px;
+// @media (max-width:376px) {
+//     .skills {
+//         top: 6326px;
 
-        &.open {
-            top: 7642px;
-        }
-    }  
-}
+//         &.open {
+//             top: 7642px;
+//         }
+//     }  
+// }
+
+// @media (max-width:361px) {
+//     .skills {
+//         top: 6459px;
+
+//         &.open {
+//             top: 7642px;
+//         }
+//     }  
+// }
