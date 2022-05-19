@@ -4067,6 +4067,11 @@ body {
     right: 65px;
   }
 }
+@media (max-width: 770px) {
+  .wrapper__response__about__me .response__about__me .slider {
+    right: 35px;
+  }
+}
 @media (max-width: 415px) {
   .wrapper__response__about__me .response__about__me .slider {
     right: 1px;

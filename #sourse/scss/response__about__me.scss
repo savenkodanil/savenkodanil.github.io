@@ -344,6 +344,13 @@
             }
         }
 
+        @media(max-width:770px) {
+            .slider {
+                right: 35px;
+                
+            }
+        }
+
         @media(max-width:415px) {
             .slider {
                 right: 1px;

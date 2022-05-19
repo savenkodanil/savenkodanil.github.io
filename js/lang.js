@@ -64,8 +64,10 @@ const arrLang = {
       "about-prices-4": "Modern and original layout for various devices. Deadline from two days",
       "reviews-about-my": "REVIEWS",
       "customers-say-about-me": "What customers say about me",
-      "customers-say": "“Danilo is responsible for any job, he is a very promising guy, as I saw, he loves to work and develop his skills, he did his job well and relatively quickly. He created a site for me to sell building materials and windows. He also worked on the design of banners, business cards, logos, billboards, booklets for my company. I managed all this in 2 weeks. ",
-      "customers": "Sergey Kvach",
+      "first-customers-say": "“Danilo is responsible for any job, he is a very promising guy, as I saw, he loves to work and develop his skills, he did his job well and relatively quickly. He created a site for me to sell building materials and windows. He also worked on the design of banners, business cards, logos, billboards, booklets for my company. I managed all this in 2 weeks. ",
+      "second-customers-say": "“Danilo has developed a website advertising furniture. He did everything well, taking into account the nuances, wishes and on time. I especially want to note the careful attitude to solving the tasks. It is a pleasure to work with such people. coped with the task in 3 days.“",
+      "first-customers": "Sergey Kvach",
+      "second-customers": "Oleg Shugailo",
       "go-to-site": "Go to the site",
       "back-to-top": "TO TOP"
     },
@@ -123,8 +125,10 @@ const arrLang = {
       "about-prices-4": "Сучасний та оригінальний макет під різноманітні пристрої. Термін виконання від двох днів",
       "reviews-about-my": "ВІДГУКИ",
       "customers-say-about-me": "Що клієнти говорять про мене",
-      "customers-say": "“Данило відповідально береться за будь-яку роботу, дуже перспективний хлопець, як я побачив він любить працювати і рости у своїх вміннях, завдання зробив якісно та відносно швидко. Він створював мені сайт з продажу будівельних матеріалів та вікон. Також він працював над створенням дизайнів банерів, візиток, логотипу, штендерів, буклетів для моєї компанії. З усім цим впорався за 2 неділі.”",
-      "customers": "Сергій Квач",
+      "first-customers-say": "“Данило відповідально береться за будь-яку роботу, дуже перспективний хлопець, як я побачив він любить працювати і рости у своїх вміннях, завдання зробив якісно та відносно швидко. Він створював мені сайт з продажу будівельних матеріалів та вікон. Також він працював над створенням дизайнів банерів, візиток, логотипу, штендерів, буклетів для моєї компанії. З усім цим впорався за 2 неділі.”",
+      "second-customers-say": "“Данило розробляв рекламний меблевий сайт. Зробив все якісно, з урахуванням нюансів, побажань та в обговорені терміни. Особливо хочу відзначити акуратне ставлення до вирішення поставлених завдань. Із такими людьми приємно працювати. Впорався із завданням за 3 дні.“",
+      "first-customers": "Сергій Квач",
+      "second-customers": "Олег Шугайло",
       "go-to-site": "Перейти на сайт",
       "back-to-top":"ВГОРУ"
     }
