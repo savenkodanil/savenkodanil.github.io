@@ -505,30 +505,48 @@ header .header__bg .header__content .header__buttons .anim__button .button__conn
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: linear-gradient(135deg, #D8AD16 0%, #9f41ca 100%);
-  border-radius: 15px;
-  max-width: 190px;
+  background: unset;
+  border: 2px solid #19AFA6;
+  border-radius: 30px;
+  width: 180px;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
   z-index: 100;
+  overflow: hidden;
+  position: relative;
   cursor: pointer;
+}
+header .header__bg .header__content .header__buttons .anim__button .button__connection__with__me::before {
+  content: "";
+  position: absolute;
+  bottom: -60px;
+  width: 100%;
+  height: 100%;
+  background: #19AFA6;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  z-index: -1;
+}
+header .header__bg .header__content .header__buttons .anim__button .button__connection__with__me:hover::before {
+  bottom: 0;
+}
+header .header__bg .header__content .header__buttons .anim__button .button__connection__with__me:hover p {
+  color: rgb(255, 255, 255);
 }
 header .header__bg .header__content .header__buttons .anim__button .button__connection__with__me.open {
   display: none;
-}
-header .header__bg .header__content .header__buttons .anim__button .button__connection__with__me:hover {
-  -webkit-box-shadow: inset 0px -9px 30px -14px rgba(0, 0, 0, 0.79);
-  box-shadow: inset 0px -9px 30px -14px rgba(0, 0, 0, 0.79);
 }
 header .header__bg .header__content .header__buttons .anim__button .button__connection__with__me p {
   margin: 13px 9px;
   font-family: Rubik;
   font-style: normal;
   font-weight: normal;
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   line-height: 28px;
-  color: #000000;
+  color: #19AFA6;
   text-align: center;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 @media (max-width: 660px) {
   header .header__bg .header__content .header__buttons .anim__button {
@@ -1572,6 +1590,8 @@ body.active {
   transition: all 0.3s ease;
   z-index: 101;
   cursor: pointer;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
 }
 
 .overlay.modal-photo {
@@ -1607,10 +1627,10 @@ body.active {
   padding: 30px;
   border-radius: 15px;
   overflow: hidden;
-  -webkit-box-shadow: 2px 2px 20px black;
-          box-shadow: 2px 2px 20px black;
-  -webkit-animation: popup 0.3s ease-in 1 forwards;
-          animation: popup 0.3s ease-in 1 forwards;
+  -webkit-box-shadow: 2px 2px 20px rgb(0, 0, 0);
+          box-shadow: 2px 2px 20px rgb(0, 0, 0);
+  -webkit-animation: popup 0.5s ease 1 forwards;
+          animation: popup 0.5s ease 1 forwards;
   visibility: visible;
   opacity: 1;
   z-index: 200;
@@ -1618,23 +1638,23 @@ body.active {
 
 @-webkit-keyframes popup {
   from {
-    opacity: 0;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%) scale(0.7);
+            transform: translate(-50%, -50%) scale(0.7);
   }
   to {
-    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
   }
 }
 
 @keyframes popup {
   from {
-    opacity: 0;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%) scale(0.7);
+            transform: translate(-50%, -50%) scale(0.7);
   }
   to {
-    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+            transform: translate(-50%, -50%) scale(1);
   }
 }
 @media (max-width: 500px) {
@@ -2087,27 +2107,45 @@ body.active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: linear-gradient(135deg, #D8AD16 0%, #9f41ca 100%);
+  background: unset;
+  border: 2px solid #19AFA6;
   border-radius: 15px;
-  max-width: 175px;
+  width: 190px;
   margin-top: 30px;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
   z-index: 100;
+  position: relative;
+  overflow: hidden;
 }
-.my__first__project .first__project .anim__button .button__fist__project:hover {
-  -webkit-box-shadow: inset 0px -9px 30px -14px rgba(0, 0, 0, 0.79);
-  box-shadow: inset 0px -9px 30px -14px rgba(0, 0, 0, 0.79);
+.my__first__project .first__project .anim__button .button__fist__project::before {
+  content: "";
+  position: absolute;
+  bottom: 65px;
+  width: 100%;
+  height: 100%;
+  background: #19AFA6;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  z-index: -1;
+}
+.my__first__project .first__project .anim__button .button__fist__project:hover::before {
+  bottom: 0;
+}
+.my__first__project .first__project .anim__button .button__fist__project:hover p {
+  color: rgb(255, 255, 255);
 }
 .my__first__project .first__project .anim__button .button__fist__project p {
-  margin: 13px 9px;
+  margin: 15px 9px;
   font-family: Rubik;
   font-style: normal;
   font-weight: normal;
   font-size: 1.3rem;
   line-height: 28px;
-  color: #000000;
+  color: #19AFA6;
   text-align: center;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 @media (max-width: 1050px) {
@@ -2271,17 +2309,33 @@ body.active {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background: linear-gradient(135deg, #D8AD16 0%, #9f41ca 100%);
+  background: unset;
+  border: 2px solid #19AFA6;
   border-radius: 15px;
-  max-width: 175px;
+  width: 190px;
   margin-top: 30px;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
   z-index: 100;
+  position: relative;
+  overflow: hidden;
 }
-.my__second__project .second__project .anim__button .button__second__project:hover {
-  -webkit-box-shadow: inset 0px -9px 30px -14px rgba(0, 0, 0, 0.79);
-  box-shadow: inset 0px -9px 30px -14px rgba(0, 0, 0, 0.79);
+.my__second__project .second__project .anim__button .button__second__project::before {
+  content: "";
+  position: absolute;
+  bottom: 65px;
+  width: 100%;
+  height: 100%;
+  background: #19AFA6;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  z-index: -1;
+}
+.my__second__project .second__project .anim__button .button__second__project:hover::before {
+  bottom: 0;
+}
+.my__second__project .second__project .anim__button .button__second__project:hover p {
+  color: rgb(255, 255, 255);
 }
 .my__second__project .second__project .anim__button .button__second__project p {
   margin: 13px 9px;
@@ -2290,8 +2344,10 @@ body.active {
   font-weight: normal;
   font-size: 1.3rem;
   line-height: 28px;
-  color: #000000;
+  color: #19AFA6;
   text-align: center;
+  -webkit-transition: 0.4s ease;
+  transition: 0.4s ease;
 }
 
 @media (max-width: 1390px) {
@@ -4294,9 +4350,9 @@ body.active {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #0fb1b0;
-  background: -webkit-gradient(linear, left top, left bottom, from(#0fb1b0), to(#395c5c));
-  background: linear-gradient(180deg, #0fb1b0 0%, #395c5c 100%);
+  background: rgb(15, 177, 176);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgb(15, 177, 176)), to(rgb(57, 92, 92)));
+  background: linear-gradient(180deg, rgb(15, 177, 176) 0%, rgb(57, 92, 92) 100%);
   border-radius: 15px;
 }
 

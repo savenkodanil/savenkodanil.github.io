@@ -472,32 +472,60 @@ header {
                 align-items: center;
                 justify-content: center;
                 
-                background: linear-gradient(135deg, #D8AD16 0%, #9f41ca 100%);
-                border-radius: 15px;
-                max-width: 190px;
+                background: unset;
+                border: 2px solid #19AFA6;
+                border-radius: 30px;
+                width: 180px;
                 
                 transition: 0.5s ease;
                 z-index: 100;
 
+                overflow: hidden;
+
+                position: relative;
+
                 cursor: pointer;
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    bottom: -60px;
+
+                    width: 100%;
+                    height: 100%;
+
+                    background: #19AFA6;
+
+                    transition: 0.5s ease;
+                    z-index: -1;
+                }
+
+                &:hover::before {
+                    bottom: 0;
+                }
+
+                &:hover {
+                    p {
+                        color: rgb(255, 255, 255);
+                    }
+                }
 
                 &.open {
                     display: none;
                 }
     
-                &:hover {
-                    -webkit-box-shadow: inset 0px -9px 30px -14px rgba(0,0,0,0.79); 
-                    box-shadow: inset 0px -9px 30px -14px rgba(0,0,0,0.79);
-                }
                 p {
                     margin: 13px 9px;
                     font-family: Rubik;
                     font-style: normal;
                     font-weight: normal;
-                    font-size: 1.3rem;
+                    font-size: 1.2rem;
                     line-height: 28px;
-                    color: #000000;
+                    color: #19AFA6;
                     text-align: center;
+
+                    transition: 0.4s ease;
+        
                 }
             }
         }

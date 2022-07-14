@@ -111,6 +111,7 @@ body.active {
     z-index: 101;
 
     cursor: pointer;
+    backdrop-filter: blur(20px);
     
 }
 .overlay.modal-photo {
@@ -159,7 +160,7 @@ body.active {
 
     box-shadow: 2px 2px 20px rgb(0 0 0);
 
-    animation: popup .3s ease-in 1 forwards;
+    animation: popup .5s ease 1 forwards;
 
     visibility: visible;
     opacity: 1;
@@ -168,11 +169,12 @@ body.active {
 }
 @keyframes popup {
     from {
-        opacity: 0;
-        transform: translate(-50%, -50%);
+        
+        transform: translate(-50%, -50%) scale(.7);
     }
     to {
-        opacity: 1;
+        
+        transform: translate(-50%, -50%) scale(1);
     }
 }
 
