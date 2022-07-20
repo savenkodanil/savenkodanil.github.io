@@ -2,20 +2,23 @@
     display: flex;
     gap: 60px;
     align-items: center;
-    .banner {
-        width: 699px;
-        height: 475px;
-        
-        border-radius: 50px;
+    margin-bottom: 32.5px;
 
-        opacity: 0;
-        transform: translate(-20px , 0);
-        transition: 0.6s .4s ease;
-
-        margin-bottom: 42px;
-        &._active {
-            opacity: 1;
-            transform: translate(0px , 0);
+    .media__img  {
+        max-width: 669px;
+        .banner {
+            width: 100%;
+            min-width: 300px;
+            
+            border-radius: 50px;
+    
+            opacity: 0;
+            transform: translate(-20px , 0);
+            transition: 0.6s .4s ease;
+            &._active {
+                opacity: 1;
+                transform: translate(0px , 0);
+            }
         }
     }
 
@@ -41,8 +44,6 @@
     
             line-height: 45px;
             color: #fff;
-
-            max-width: 403px;
 
             opacity: 0;
             transform: translate(20px , 0);
@@ -110,42 +111,6 @@
                 transition: 0.6s .6s ease;
   
             }
-        }
-    }
-}
-
-@media(max-width:740px) {
-    .my__fourth__project {
-        .banner {
-            width: 590px;
-            height: 431px;
-        }
-    }
-}
-
-@media(max-width:630px) {
-    .my__fourth__project {
-        .banner {
-            width: 485px;
-            height: 360px;
-        }
-    }
-}
-
-@media(max-width:560px) {
-    .my__fourth__project {
-        .banner {
-            width: 417px;
-            height: 320px;
-        }
-    }
-}
-
-@media(max-width:460px) {
-    .my__fourth__project {
-        .banner {
-            width: 334px;
-            height: 258px;
         }
     }
 }

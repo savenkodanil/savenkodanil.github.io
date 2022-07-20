@@ -104,6 +104,8 @@
 
         position: relative;
 
+        margin: 32.5px 0 65px 0;
+
         .view {
             position: absolute;
 
@@ -116,21 +118,27 @@
 
         }
 
-        img {
-            width: 570px;
-            height: 855px;
-
-            border-radius: 40px;
-
-            margin: 42px 0 65px 0;
-
-            opacity: 0;
-            transform: translate(20px , 0);
-            transition: 0.6s .4s ease;
-
-            &._active {
-                opacity: 1;
-                transform: translate(0px , 0);
+        .img__byklet {
+            max-width: 620px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .byklet-1,
+            .byklet-2 {
+                width: 100%;
+                min-width: 300px;
+                height: auto;
+    
+                border-radius: 40px;
+    
+                opacity: 0;
+                transform: translate(20px , 0);
+                transition: 0.6s .4s ease;
+    
+                &._active {
+                    opacity: 1;
+                    transform: translate(0px , 0);
+                }
             }
         }
 
@@ -196,26 +204,33 @@
         gap: 140px;
         align-items: center;
 
-        .visitka {
-            width: 593px;
-            height: 756px;
-        
-            border-radius: 60px;
-
-            opacity: 0;
-            transform: translate(-20px , 0);
-            transition: 0.6s .4s ease;
-
-            &._active {
-                opacity: 1;
-                transform: translate(0px , 0);
+        .img__bisnesCard {
+            max-width: 593px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .visitka {
+                width: 100%;
+                height: auto;
+                min-width: 300px;
+            
+                border-radius: 60px;
+    
+                opacity: 0;
+                transform: translate(-20px , 0);
+                transition: 0.6s .4s ease;
+    
+                &._active {
+                    opacity: 1;
+                    transform: translate(0px , 0);
+                }
             }
         }
 
         .green__circle-2 {
             position: absolute;
             right: 0;
-            top: 5648px;
+            top: 6763px;
 
         }
 
@@ -276,6 +291,109 @@
         }
     }
 
+    .my__ninth__project {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        align-items: center;
+
+        position: relative;
+
+        margin: 65px 0 0px 0;
+
+        .view {
+            position: absolute;
+
+            opacity: 0;
+
+            left: 50%;
+            top: -152px;
+
+            color: pink;
+
+        }
+
+        .img__bisnesCard {
+            max-width: 620px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            .bisnesCard-1,
+            .bisnesCard-2 {
+                width: 100%;
+                min-width: 300px;
+                height: auto;
+    
+                border-radius: 40px;
+    
+                opacity: 0;
+                transform: translate(20px , 0);
+                transition: 0.6s .4s ease;
+    
+                &._active {
+                    opacity: 1;
+                    transform: translate(0px , 0);
+                }
+            }
+        }
+
+        .ninth__project {
+            p:nth-child(1) {
+                font-size: 1.375rem;
+                color: #19AFA6; 
+    
+                margin: 0px 0 10px 0;
+
+                opacity: 0;
+                transform: translate(-20px , 0);
+                transition: 0.6s .2s ease;
+                
+                &._active {
+                    opacity: 1;
+                    transform: translate(0px , 0);
+                }
+            }
+    
+            h3 {
+                font-size: 2.375rem;
+        
+                line-height: 45px;
+                color: #fff;
+    
+                max-width: 419px;
+
+                opacity: 0;
+                transform: translate(-20px , 0);
+                transition: 0.6s .4s ease;
+                
+                &._active {
+                    opacity: 1;
+                    transform: translate(0px , 0);
+                }
+            }
+    
+            p:nth-child(3) {
+                font-size: 1.375rem;
+                line-height: 26px;
+    
+                color: #AEAEAE;
+    
+                padding: 20px 0 0px 0;
+    
+                max-width: 400px;
+
+                opacity: 0;
+                transform: translate(-20px , 0);
+                transition: 0.6s .6s ease;
+                
+                &._active {
+                    opacity: 1;
+                    transform: translate(0px , 0);
+                }
+            }
+        }
+    }
+
     @media(max-width:1300px) { 
         .my__sixth__project {
             .green__circle-2 {
@@ -289,11 +407,13 @@
             flex-direction: column;
             align-items: center;
 
-            img {
-                margin: 0 0 50px 0;
+            .img__byklet {
+                .byklet-1,
+                .byklet-2 {
 
-                transform: translate(-20px , 0);
-                transition: .6s .8s ease;
+                    transform: translate(-20px , 0);
+                    transition: .6s .8s ease;
+                }
             }
 
             .fifth__project {
@@ -334,6 +454,26 @@
                 }
             }
         }
+
+        .my__ninth__project {
+            flex-direction: column;
+            align-items: center;
+
+            .img__bisnesCard {
+                .bisnesCard-1,
+                .bisnesCard-2 {
+
+                    transform: translate(-20px , 0);
+                    transition: .6s .8s ease;
+                }
+            }
+
+            .ninth__project {
+                p:nth-child(3) {
+                    max-width: 649px;
+                }
+            }
+        }
     }
 
     @media(max-width:910px) { 
@@ -351,55 +491,6 @@
         .my__sixth__project {
             .green__circle-2 {
                 display: none;
-            }
-        }
-    }
-
-    
-    @media(max-width:630px) {
-        .my__fifth__project {
-            img {
-                width: 470px;
-                height: 755px;
-            }
-        }
-
-        .my__sixth__project {
-            .visitka {
-                width: 474px;
-                height: 647px;
-            }
-        }
-    }
-
-    @media(max-width:520px) {
-        .my__fifth__project {
-            img {
-                width: 407px;
-                height: 655px;
-            }
-        }
-
-        .my__sixth__project {
-            .visitka {
-                width: 386px;
-                height: 539px;
-            }
-        }
-    }
-
-    @media(max-width:450px) {
-        .my__fifth__project {
-            img {
-                width: 335px;
-                height: 553px;
-            }
-        }
-
-        .my__sixth__project {
-            .visitka {
-                width: 330px;
-                height: 472px;
             }
         }
     }

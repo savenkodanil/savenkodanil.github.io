@@ -1,9 +1,9 @@
-.my__first__project {
+.my__eighth__project {
     display: flex;
-    justify-content: space-between;
-    gap: 30px;
+    gap: 60px;
     align-items: center;
     margin-bottom: 65px;
+    
     .img__sert {
         position: relative;
         max-width: 600px;
@@ -53,7 +53,7 @@
             border-radius: 40px;
 
             opacity: 0;
-            transform: translate(20px , 0);
+            transform: translate(-20px , 0);
             transition: 0.6s .4s ease;
             z-index: -1;
             display: inherit;
@@ -77,13 +77,22 @@
 
             transition: .5s ease;
 
+            max-width: 490px;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
             .go__site {
                 color: #fff;
                 font-size: 2.5rem;
-                width: 375px;
+                 
                 
                 position: relative;
                 text-transform: uppercase;
+                &.us {
+                    width: 210px;
+                }
+
                 &::before {
                     content: '';
                     position: absolute;
@@ -163,15 +172,25 @@
         }
     }
 
-    .first__project {
-        .first__p {
+    .green__circle  {
+        position: absolute;
+
+        width: 284px;
+        height: 726px;
+
+        right: 0px;
+        top: 2297px;
+    }
+
+    .eighth__project {
+        .eighth__p {
             font-size: 1.375rem;
             color: #19AFA6; 
 
-            margin: 0px 0 10px 0;
-
+            margin: 0px 0 10px 0; 
+            
             opacity: 0;
-            transform: translate(-20px , 0);
+            transform: translate(20px , 0);
             transition: 0.6s .2s ease;
 
             &._active {
@@ -182,14 +201,14 @@
 
         h3 {
             font-size: 2.375rem;
-    
+
             line-height: 45px;
             color: #fff;
 
-            max-width: 495px;
+            max-width: 380px;
 
             opacity: 0;
-            transform: translate(-20px , 0);
+            transform: translate(20px , 0);
             transition: 0.6s .4s ease;
 
             &._active {
@@ -199,6 +218,9 @@
         }
 
         p:nth-child(3) {
+
+            padding: 0px;
+            
             font-size: 1.375rem;
             line-height: 26px;
 
@@ -206,10 +228,10 @@
 
             padding: 20px 0 0px 0;
 
-            max-width: 400px;
+            max-width: 410px;
 
             opacity: 0;
-            transform: translate(-20px , 0);
+            transform: translate(20px , 0);
             transition: 0.6s .6s ease;
 
             &._active {
@@ -220,18 +242,17 @@
 
         .anim__button {
             opacity: 0;
-            transform: translate(-20px , 0);
+            transform: translate(20px , 0);
             transition: 0.6s .8s ease;
-            
+
             &._active {
                 opacity: 1;
                 transform: translate(0px , 0);
             }
-            
 
-            .button__fist__project {
+            .button__eighth__project {
                 text-decoration: none;
-
+                
                 display: inline-flex;
                 align-items: center;
                 justify-content: center;
@@ -250,8 +271,7 @@
 
                 position: relative;
                 overflow: hidden;
-
-                
+    
                 &::before {
                     content: '';
                     position: absolute;
@@ -277,7 +297,7 @@
                 }
     
                 p {
-                    margin: 15px 9px;
+                    margin: 13px 9px;
                     font-family: Rubik;
                     font-style: normal;
                     font-weight: normal;
@@ -293,33 +313,110 @@
     }
 }
 
-@media(max-width:1050px) {
-    .my__first__project {
-        flex-direction: column;
-        align-items: center;
-        margin-top: 50px;
-        
-        .first__project {
-            margin: 0;
-            p:nth-child(1) {
-                margin: 0 0 10px 0;
-            }
-
-            p:nth-child(3) {
-                max-width: 649px;
-            }
+@media(max-width:1390px) {
+    .my__eighth__project {
+        .green__circle {
+            display: none;
         }
+    }
+}
+
+@media(max-width:1050px) {
+    .my__eighth__project {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 30px;
+
         .img__sert {
             img {
                 transition: .6s 1s ease;
-                transform: translate(-20px,0);
+                
+            }
+        }
+
+        .green__circle {
+            display: block;
+
+            width: 248px;
+            height: 634px;
+            right: 0px;
+
+            top: 3248px;
+        }
+
+        .eighth__project {
+            .eighth__p {
+                opacity: 0;
+                transform: translate(-20px , 0);
+                transition: 0.6s .2s ease;
+
+                
+            }
+
+            h3 {
+                opacity: 0;
+                transform: translate(-20px , 0);
+                transition: 0.6s .4s ease;
+
+                
+            }
+            
+            p:nth-child(3) {
+                max-width: 649px;
+
+                opacity: 0;
+                transform: translate(-20px , 0);
+                transition: 0.6s .6s ease;
+                
+            
+            }
+
+            .anim__button {
+                transform: translate(-20px , 0);
             }
         }
     }
 }
 
+@media(max-width:910px) {
+    .my__eighth__project {
+        p:nth-child(3) {
+
+            padding: 0px;
+            
+            font-size: 1.375rem;
+            line-height: 26px;
+
+            color: #AEAEAE;
+
+            padding: 20px 0 0px 0;
+
+            max-width: 410px;
+        }
+    }
+}
+
+@media(max-width:910px) {
+    .my__eighth__project {
+        .green__circle {
+            width: 131px;
+            height: 385px;
+        
+            top: 3393px;
+        }
+    }
+}
+
+@media(max-width:767px) {
+    .my__eighth__project {
+        .green__circle {
+           display: none;
+        }
+    }
+}
+
 @media(max-width:500px) {
-    .my__first__project {
+    .my__eighth__project {
         margin-bottom: 50px;
     }
 }

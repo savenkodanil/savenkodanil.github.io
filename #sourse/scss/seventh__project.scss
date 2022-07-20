@@ -1,4 +1,4 @@
-.my__first__project {
+.my__seventh__project {
     display: flex;
     justify-content: space-between;
     gap: 30px;
@@ -163,8 +163,8 @@
         }
     }
 
-    .first__project {
-        .first__p {
+    .seventh__project {
+        .seventh__p {
             font-size: 1.375rem;
             color: #19AFA6; 
 
@@ -229,7 +229,7 @@
             }
             
 
-            .button__fist__project {
+            .button__seventh__project {
                 text-decoration: none;
 
                 display: inline-flex;
@@ -294,12 +294,12 @@
 }
 
 @media(max-width:1050px) {
-    .my__first__project {
+    .my__seventh__project {
         flex-direction: column;
         align-items: center;
         margin-top: 50px;
         
-        .first__project {
+        .seventh__project {
             margin: 0;
             p:nth-child(1) {
                 margin: 0 0 10px 0;
@@ -319,7 +319,7 @@
 }
 
 @media(max-width:500px) {
-    .my__first__project {
+    .my__seventh__project {
         margin-bottom: 50px;
     }
 }
