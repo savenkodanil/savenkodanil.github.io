@@ -1,0 +1,190 @@
+.my__third__project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+    gap: 30px;
+
+    margin-bottom: 65px;
+
+    .img__sthender {
+        max-width: 500px;
+        .sthender {
+            width: 100%;
+            min-width: 300px;
+            height: auto;
+    
+            border-radius: 70px;
+    
+            opacity: 0;
+            transform: translate(20px , 0);
+            transition: 0.6s .4s ease;
+    
+            &._active {
+                opacity: 1;
+                transform: translate(0px , 0);
+            }
+        }
+    }
+
+    .second__circle {
+        position: absolute;
+        
+        left: 0px;
+        top: 3207px;
+
+    }
+
+    .third__project {
+        p:nth-child(1) {
+            font-size: 1.375rem;
+            color: #19AFA6; 
+
+            margin: 0px 0 10px 0;
+
+            opacity: 0;
+            transform: translate(-20px , 0);
+            transition: 0.6s .2s ease;
+
+            &._active {
+                opacity: 1;
+                transform: translate(0px , 0);
+            }
+        }
+
+        h3 {
+            font-size: 2.375rem;
+    
+            line-height: 45px;
+            color: #fff;
+
+            max-width: 495px;
+
+            opacity: 0;
+            transform: translate(-20px , 0);
+            transition: 0.6s .4s ease;
+
+            &._active {
+                opacity: 1;
+                transform: translate(0px , 0);
+            }
+        }
+
+        p:nth-child(3) {
+            font-size: 1.375rem;
+            line-height: 26px;
+
+            color: #AEAEAE;
+
+            padding: 20px 0 0px 0;
+
+            max-width: 400px;
+
+            opacity: 0;
+            transform: translate(-20px , 0);
+            transition: 0.6s .6s ease;
+
+            &._active {
+                opacity: 1;
+                transform: translate(0px , 0);
+            }
+        }
+
+        a {
+            text-decoration: none;
+            .button__fist__project {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                
+                background: linear-gradient(135deg, #D8AD16 0%, #9f41ca 100%);
+    
+                border-radius: 15px;
+    
+                max-width: 175px;
+                
+                margin-top: 30px;
+    
+                transition: 0.5s ease;
+                z-index: 100;
+    
+                &:hover {
+                    -webkit-box-shadow: inset 0px -9px 30px -14px rgba(0,0,0,0.79); 
+                    box-shadow: inset 0px -9px 30px -14px rgba(0,0,0,0.79);
+                }
+    
+                p {
+                    margin: 13px 9px;
+                    font-family: Rubik;
+                    font-style: normal;
+                    font-weight: normal;
+                    font-size: 1.3rem;
+                    line-height: 28px;
+                    color: #000000;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width:1580px) {
+    .my__third__project {
+       .second__circle {
+           display: none;
+       }
+    }
+}
+
+@media(max-width:1050px) {
+    .my__third__project {
+        flex-direction: column;
+        align-items: center;
+
+        gap: 30px;
+        .third__project {
+            p:nth-child(3) {
+                max-width: 649px;
+            }
+        }
+        .img__sthender {
+            .sthender {
+  
+                transform: translate(-20px , 0);
+                transition: 0.6s .8s ease;
+
+            }
+        }
+
+        .second__circle {
+            display: block;
+
+            top: 4884px;
+        }
+    }
+}
+
+@media(max-width:850px)  {
+    .my__third__project {
+        .second__circle {
+            width: 135px;
+            height: 525px; 
+        }
+    }
+}
+
+@media(max-width:740px)  {
+    .my__third__project {
+        .second__circle {
+            display: none; 
+        }
+    }
+}
+
+@media(max-width:500px) {
+    .my__third__project {
+        margin-bottom: 50px;
+    }
+}
+

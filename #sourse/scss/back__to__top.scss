@@ -1,0 +1,68 @@
+#myBtn  {
+    display: none;
+    .back__to__top {
+        width: 210px;
+        height: 50px;
+
+        background: #ada9a9;
+        opacity: .9;
+
+        border-radius: 100px 100px 0 0 ;
+        position: fixed;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+
+
+        transition: .4s ease;
+
+        z-index: 1;
+
+        cursor: pointer;
+
+        .arrow-svg {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+    
+            position: relative;
+            span {
+                color: #000;
+                font-size: 1.4rem;
+                text-transform: uppercase;
+                
+                position: absolute;
+    
+                right: 45px;
+                top: 16px;
+            }
+    
+            svg {
+                width: 90px;
+                height: 90px;
+    
+                position: absolute;
+                left: 19px;
+                top: -15px;
+    
+                animation: back 1.1s ease-in-out infinite alternate;
+            }
+            @keyframes back {
+                0% {
+                    transform: translateY(-3px);
+                }
+    
+                100% {
+                    transform: translateY(0px);
+                }
+            }
+        }
+    
+        &:hover,
+        &:focus {
+            filter: brightness(1.2);
+            outline: none;
+        }
+    }
+    
+}

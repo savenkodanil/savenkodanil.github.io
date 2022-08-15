@@ -1,0 +1,116 @@
+.my__fourth__project {
+    display: flex;
+    gap: 60px;
+    align-items: center;
+    margin-bottom: 32.5px;
+
+    .media__img  {
+        max-width: 669px;
+        .banner {
+            width: 100%;
+            min-width: 300px;
+            
+            border-radius: 50px;
+    
+            opacity: 0;
+            transform: translate(-20px , 0);
+            transition: 0.6s .4s ease;
+            &._active {
+                opacity: 1;
+                transform: translate(0px , 0);
+            }
+        }
+    }
+
+    .fourth__project {
+        p:nth-child(1) {
+            font-size: 1.375rem;
+            color: #19AFA6; 
+
+            margin: 0px 0 10px 0;
+
+            opacity: 0;
+            transform: translate(20px , 0);
+            transition: 0.6s .2s ease;
+
+            &._active {
+                opacity: 1;
+                transform: translate(0px , 0);
+            }
+        }
+
+        h3 {
+            font-size: 2.375rem;
+    
+            line-height: 45px;
+            color: #fff;
+
+            opacity: 0;
+            transform: translate(20px , 0);
+            transition: 0.6s .4s ease;
+
+            &._active {
+                opacity: 1;
+                transform: translate(0px , 0);
+            }
+        }
+
+        p:nth-child(3) {
+            font-size: 1.375rem;
+            line-height: 26px;
+
+            color: #AEAEAE;
+
+            padding: 20px 0 0px 0;
+
+            max-width: 400px;
+
+            opacity: 0;
+            transform: translate(20px , 0);
+            transition: 0.6s .6s ease;
+
+            &._active {
+                opacity: 1;
+                transform: translate(0px , 0);
+            }
+        }
+    }
+}
+
+@media(max-width:1050px) {
+    .my__fourth__project {
+        flex-direction: column-reverse;
+        align-items: center;
+
+        gap: 30px;
+
+        .banner {
+            transition: .6s .8s ease;
+        }
+
+        .fourth__project {
+            p:nth-child(1) {
+                opacity: 0;
+                transform: translate(-20px , 0);
+                transition: 0.6s .2s ease;
+            }
+
+            h3 {
+                opacity: 0;
+                transform: translate(-20px , 0);
+                transition: 0.6s .4s ease;
+
+            }
+
+            p:nth-child(3) {
+    
+                max-width: 649px;
+
+                opacity: 0;
+                transform: translate(-20px , 0);
+                transition: 0.6s .6s ease;
+  
+            }
+        }
+    }
+}

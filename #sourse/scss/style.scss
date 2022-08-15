@@ -1,0 +1,27 @@
+@import "nullstyle.scss";
+@import "html&body.scss";
+@import "header.scss";
+@import "cursor.scss";
+@import "about__me.scss";
+@import "modal__window.scss";
+@import "my__newcomers.scss";
+@import "first__project.scss";
+@import "second__project.scss";
+@import "third__project.scss";
+@import "fourth__project.scss";
+@import "seventh__project.scss";
+@import "eighth__project.scss";
+@import "view__all.scss";
+@import "preloader.scss";
+@import "my__skills.scss";
+@import "services__and__prices.scss";
+@import "response__about__me.scss";
+@import "footer.scss";
+@import "back__to__top.scss";
+@import "scroll__bar.scss";
+@import "ninth.scss";
+
+%active {
+    opacity: 1;
+    transform: translate(0 , 0);
+}

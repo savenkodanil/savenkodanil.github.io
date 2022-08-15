@@ -1,0 +1,28 @@
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #232326;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(15,177,176);
+    background: linear-gradient(180deg, rgba(15,177,176,1) 0%, rgba(57,92,92,1) 100%);
+    border-radius: 15px;
+}
+
+:root {
+    scrollbar-gutter: stable;
+}
+
+html,body {
+    font-family: 'Rubik', sans-serif;
+    font-style: normal;
+
+    font-size: 16px;
+
+    min-width: 100%;
+
+    scroll-behavior: inherit;
+}
